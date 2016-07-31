@@ -1,0 +1,30 @@
+/* CSS sheet for Basic-Profile page*/
+
+
+*{
+	box-sizing: border-box;
+	border: 2px solid red;
+}
+
+/* for Displaying the name*/
+#Logo{
+	position: fixed;
+	background: #00b3b3;
+	padding: 30px;
+	text-align: center;
+	margin: 10px;
+	top: 15px;
+	left: 25px;
+
+}
+
+/* To navigate between pages */
+.navigation{
+	border-bottom: 2px black;
+	border-bottom: 1px;
+	padding-right: 100px;
+	padding-left: 100px;
+	text-align: right;
+	padding-top: 30px;
+}
+
