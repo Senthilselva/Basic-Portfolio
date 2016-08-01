@@ -1,30 +1,85 @@
 /* CSS sheet for Basic-Profile page*/
 
 
-*{
-	box-sizing: border-box;
-	border: 2px solid red;
+
+* {
+  box-sizing: border-box;
 }
 
 /* for Displaying the name*/
 #Logo{
-	position: fixed;
+	position: absolute;
 	background: #00b3b3;
 	padding: 30px;
 	text-align: center;
-	margin: 10px;
-	top: 15px;
+	margin: 10px,5px,10px,10px;
+	top: 10px;
 	left: 25px;
+	border: 2px solid red;
+	font-size: 18px;
+	line-height: 150%;
+	font-family: "Georgia", "Times New Roman", Times, serif; 
 
+}
+
+/*header background color */
+header{
+	background-color: #ffffff;
+	border-spacing: 5px;	
 }
 
 /* To navigate between pages */
 .navigation{
-	border-bottom: 2px black;
-	border-bottom: 1px;
+	background-color: #ffffff;
 	padding-right: 100px;
-	padding-left: 100px;
-	text-align: right;
+	height:100px;
 	padding-top: 30px;
+	border: 10px solid #eee;
+	text-align: right;
+	font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
+
+/*The main content for about me  page*/
+
+#mainbox_about {
+	float: left;
+	width: 700px;
+	height: 800px;
+	position: relative;
+	background: #ffffff;
+	padding: 20px;
+	top:150;
+	/*bottom:0; */
+	left: 100px;
+	text-align: center;
+	overflow: scroll;
+}
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#box_image_about {
+	float: left;
+	position: relative;
+}
+
+/* Classes for contact box */
+#contactbox {
+	float: right;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: #ffffff;
+	padding: 20px;
+	left: -50px;
+	text-align: center;
+}
+
+/*for contact icons*/
+
+.img {
+	float: left;
+}
