@@ -1,1 +1,86 @@
-contact
+<!-- First Assignment Basic Portfoli0-->
+<!doctype html>
+<html>
+	<head>
+		<title>Senthil's Basic Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+	</head>
+
+	<body background ="images/white_brick_wall.png">
+		
+		<!-- displayed options to move between pages in the header -->
+		<header class="navigation">
+		<div>
+			<nav>
+		  		<a href="index.html">About</a> |
+		  		<a href="portfolio.html">Portfolio</a> |
+		  		<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+		</header>
+
+		<!-- Fixed box for displaying name -->
+		<div id="Logo">
+			Senthil Selvakumar
+		</div>
+		<br>
+
+		<!-- Main Box -->
+		<div class="container">
+
+			<div id ="mainbox">
+
+				<!--heading inside the Box-->
+				<div class="heading_inside">
+				<h1> Contact </h1>
+				<hr>
+				</div>
+
+				<!--Containt and Picture-->
+				<div align="left">
+					
+					<form> <!-- action="action_page.php">-->
+					   
+					    <label for="name">Name</label>
+					    <input type="text" id="email" placeholder="Mickey">
+
+					    <label for="email">E-mail</label>
+					    <input type="email" id="email" placeholder="Mickey@disney.com">
+
+					    <!--not working as it need to be -->
+					    <label for="message">Message</label>
+					    <input type="textarea" id="message" placeholder="Message">
+					  
+					    <input type="submit" value="Submit">
+					  </form>
+
+				</div>
+		
+			</div>
+
+
+			<!-- Side bar -->
+			<div id="contactbox" class="img">
+
+				<div class="heading_inside">
+					<h3>Connect with me</h3>
+					<hr>
+				</div>
+
+				<img src="images/github.png" alt= "image" width="50" height="50" />
+				<img src="images/linked.png" alt= "image" width="50" height="50" />
+				<img src="images/stackoverflow.png" alt= "image" width="50" height="50" />
+					
+			</div>
+		</div>
+
+					
+		<footer>
+			<hr size="5" style="color:#4aaaa5">
+			<div class="spacing_footer">
+			<b> @copywrite senthil</b>
+		</footer>
+
+	</body>
+</html>
