@@ -46,7 +46,12 @@ header{
 }
 
 
-
+.heading_inside{
+	text-align: center;
+	color: #4aaaa5;
+	font-style: 'Georgia', Times, Times New Roman, serif;
+	font-size: 20;
+}
 /*The main content for about me  page*/
 
 #mainbox {
@@ -68,11 +73,12 @@ header{
     text-align: left;
 }
 
-#box_image_about {
-	float: left;
-	/*position: relative;*/
+/*
+.box_image {
+	border: 1px solid black;
+    padding: 10px 10px 10px 10px;	
 }
-
+*/
 /* Classes for contact box */
 #contactbox {
 	float: left;
@@ -87,10 +93,10 @@ header{
 
 /*for contact icons*/
 
-.img {
+img {
 	float: left;
+	padding: 0 20px 10px 10px;
 }
-
 
 /* Footer */
 footer {
