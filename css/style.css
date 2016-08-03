@@ -73,12 +73,7 @@ header{
     text-align: left;
 }
 
-/*
-.box_image {
-	border: 1px solid black;
-    padding: 10px 10px 10px 10px;	
-}
-*/
+
 /* Classes for contact box */
 #contactbox {
 	float: left;
