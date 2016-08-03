@@ -49,8 +49,8 @@ header{
 .heading_inside{
 	text-align: center;
 	color: #4aaaa5;
-	font-style: 'Georgia', Times, Times New Roman, serif;
-	font-size: 20;
+	font-family: "Georgia", Times, "Times New Roman", serif;
+	font-size: 30px;
 }
 /*The main content for about me  page*/
 
@@ -90,7 +90,7 @@ header{
 
 img {
 	float: left;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 }
 
 /* Footer */
@@ -124,14 +124,9 @@ input[type=email], select {
     box-sizing: border-box;
 }
 
-input[type=textarea], select {
+textarea{
 	width: 100%;
 	height:100px;
-	padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -149,15 +144,26 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 .box_to_hold_pic{
+	float: left;
 	position: relative;
-	height: 200px;
-	width: 200px; 
+	height: 250px;
+	width: 250px; 
+	border: 2px;/* solid red;*/
+	padding: 25px;
+	margin-right: 20px;
+	z-index: 1;
 }
 
-.box_to_hold_msginpic{
-	position: relative;
+.banner{
+	position: absolute;
 	height: 40px;
-	width: 200px;
+	width: 208px;
+	top: 175px;
+	left: 22px;
 	background-color: #4aaaa5;
-	color: white;
+	z-index: 2;
+	font-size: 25px;
+	color:white;
+	font-family: "Georgia", "Times New Roman", Times, serif; 
+	border: 2px;/* solid red;*/
 }
