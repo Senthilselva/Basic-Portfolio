@@ -11,16 +11,16 @@
 body{
 background-image: url("../images/white_brick_wall.png");
 }
+
+
 /* for Displaying the name*/
 #Logo{
 	position: absolute;
 	background: #4aaaa5;
 	padding: 30px;
 	height:80px;
-	width:30%;
+	width:25%;
 	text-align: center;
-	/*top: 10px;
-	left: 100px;*/
 	font-size: 25px;
 	color:white;
 	font-family: "Georgia", "Times New Roman", Times, serif; 
@@ -36,7 +36,6 @@ header{
 }
 
 nav.header_content{
-	/*left:100px;*/
 	width: 960px;
 	margin: auto;
 
@@ -44,6 +43,7 @@ nav.header_content{
 
 /* To navigate between pages */
 ul{
+	padding-top: 45px;
 	list-style-type: none;
 	float: right;
 }
@@ -76,99 +76,147 @@ li a {
 }
 
 
+
+/* Center the Main content in all pages*/
+
 .container{
 	width: 960px;
-	/*position: relative;
-	left:100px; */
-	margin: 100px auto;
-	/*float: left;*/
+	margin: 50px auto;
 }
 
 
-.heading_inside{
-	text-align: center;
+h1{
+	text-align:left;
 	color: #4aaaa5;
 	font-family: "Georgia", Times, "Times New Roman", serif;
-	font-size: 30px;
+	font-weight: bolder;
+	font-size: 25px;
+	padding-top: 6px;
+	padding-bottom: 15px;
 }
-/*The main content for about me  page*/
+
+
+/*The main content for all page */
 
 #mainbox {
 	float: left;
 	width: 650px;
-	height: 425px;
-	position: relative;
+	height: auto;
 	background: #ffffff;
 	padding: 20px;
+	margin-bottom: 100px;
 	top: -15px;
 	left: 0px;
 	text-align: center;
-	overflow: scroll;
-}
-
-#wrapper {
-    float: left;
-    margin: 0 auto;
-    text-align: left;
 }
 
 
-/* Classes for contact box */
+/*Picture of the About me page*/
+
+img.about_page {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border-style: double;
+	border: 2px solid #4aaaa5; 
+}
+
+/*Writing for about me page */
+p{
+	line-height: 1.5;
+	text-align: left;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/* Classes for contact box or the side bar*/
 #contactbox {
 	float: left;
 	width: 270px;
-	height: 200px;
 	position: relative;
 	background: #ffffff;
 	padding: 20px;
-	left:60px;
+	left:40px;
  	text-align: center;
 }
 
-/*for contact icons*/
+/* heading for the sidebar */
 
-img {
-	float: left;
-	/*margin-right: 10px;*/
+h3.sidebar_header{
+	color: #4aaaa5;
+	font-family: "Georgia", Times, "Times New Roman", serif;
+	font-weight: bolder;
+	font-size: 15px;
+	padding-top: 4px;
+	padding-bottom: 8px;
+
 }
+
+
+/*icon size*/
+
+img.icon_size{
+	/*float: left;*/
+	width:50px;
+	height: 50px;
+	margin: 5px;
+}
+
+
+
 
 /* Footer */
 footer {
 	background: #666666;
 	clear: both;
+	position: fixed;
+	height:50px;
+	width: 100%;
+	border-top: 3px solid #4aaaa5;
+	bottom:0px;
+	left:0;
+
 	text-align: center;
-	height:75px;
+	padding-top: 20px;
+
+	color: white;
+	font-size: 8px;
+	font-family:"Georgia", Times, "Times New Roman", serif; 
+
+
+	z-index: 2;
 
 }
 
 /*contact page forms*/
 
-input[type=text], select {
+
+/* align the lables to left */
+.lable_align{
+	text-align: left;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.name,
+.email {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    place
-}
-
-input[type=email], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    /*border-radius: 4px;*/
+    border: 2px solid #ccc;
     box-sizing: border-box;
 }
 
-textarea{
+textarea.message{
 	width: 100%;
 	height:100px;
+	border: 2px solid #ccc;
+	padding: 15px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input input[type=submit]{
     background-color: #4aaaa5;
     border: none;
     color: white;
@@ -177,6 +225,9 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
    /* cursor: pointer; */
 }
+
+
+
 
 
 /*   portfolio   */
@@ -190,7 +241,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	border: 2px;/* solid red;*/
 	padding: 25px;
 	margin-right: 20px;
-	z-index: 1;
+	z-index: 0;
 }
 
 .banner{
@@ -200,9 +251,16 @@ input[type=button], input[type=submit], input[type=reset] {
 	top: 175px;
 	left: 22px;
 	background-color: #4aaaa5;
-	z-index: 2;
-	font-size: 25px;
+	z-index: 1;
+	border: 2px;
+}
+
+h3.bannertext{
+	padding-top: 10px;
+	padding-bottom: 8px;
+	font-size: 20px;
+	font-weight: lighter;
 	color:white;
 	font-family: "Georgia", "Times New Roman", Times, serif; 
-	border: 2px;/* solid red;*/
+	
 }
